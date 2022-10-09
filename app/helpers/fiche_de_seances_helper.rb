@@ -1,0 +1,2 @@
+module FicheDeSeancesHelper
+end

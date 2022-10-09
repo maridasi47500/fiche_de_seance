@@ -1,0 +1,204 @@
+<%= form_with(model: fiche_de_seance, local: true) do |form| %>
+  <% if fiche_de_seance.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(fiche_de_seance.errors.count, "error") %> prohibited this fiche_de_seance from being saved:</h2>
+
+      <ul>
+        <% fiche_de_seance.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+ 
+  </div>
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+
+
+
+
+  
+
+
+
+
+  
+
+ 
+
+ 
+
+ 
+
+<table>
+    <tr >
+        <td><p>
+    <%= form.label :date %>
+    <%= form.date_select :date %>
+</p></td>
+        
+        <td rowspan="3" colspan="3">
+      
+  <div class="field">
+    <%= form.label :titre %>
+    <%= form.text_field :titre %>
+  </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+  <div class="field">
+    <%= form.label :cohorte %>
+    <%= form.text_field :cohorte %>
+  </div></td>
+    </tr>
+    
+    <tr>
+        <td>  <div class="field">
+    <%= form.label :theme %>
+    <%= form.text_field :theme %>
+  </div></td>
+    </tr>
+    <tr>
+        <td>
+        <div class="field">
+    <%= form.label :formateur %>
+    <%= form.text_field :formateur %>
+  </div>
+        </td>
+        <td>
+ <div class="field">
+    <%= form.label :effectif %>
+    <%= form.number_field :effectif %>
+  </div>
+        <td>
+  <div class="field">
+    <%= form.label :lieux %>
+    <%= form.text_field :lieux %>
+  </div>
+        </td>
+        <td>
+  <div class="field">
+    <%= form.label :duree %>
+    <%= form.text_field :duree %>
+  </div>
+
+        </td>
+    </tr>
+    <tr>
+        <td class="precedente" colspan="4"> <div class="field">
+    <%= form.label :seance_precedente %>
+    <%= form.text_field :seance_precedente %>
+  </div></td>
+    </tr>
+     <tr >
+        <td class="suivante" colspan="4">  <div class="field">
+    <%= form.label :seance_suivante %>
+    <%= form.text_field :seance_suivante %>
+  </div></td>
+     </tr><!-- comment -->
+     
+      <tr>
+        <td colspan="4">  <div class="field">
+    <%= form.label :reference %>
+    <%= form.text_field :reference %>
+  </div></td>
+      </tr><!-- comment -->
+       <tr>
+        <td colspan="4"> <div class="field">
+    <%= form.label :moyen_pedagogique %>
+    <%= form.text_field :moyen_pedagogique %>
+  </div></td>
+    </tr>
+    
+        <tr>
+        <td colspan="4">  <div class="field obj">
+    <%= form.label :objectif %>
+    <%= form.text_area :objectif %>
+  </div></td>
+        </tr><!-- comment -->
+        
+        
+            <tr>
+        <td colspan="4">
+
+  <div class="field plan">
+    <%= form.label :plan %>
+    <%= form.text_area :plan %>
+  </div></td>
+    </tr>
+    
+    
+            <tr>
+        <td colspan="4"><div class="field pointcle">
+    <%= form.label :points_cles %>
+    <%= form.text_area :points_cles %>
+  </div>
+</td>
+    </tr>
+    
+            <tr>
+        <td colspan="4">  <div class="field intro">
+    <%= form.label :introduction %>
+    <%= form.text_area :introduction %>
+  </div>
+</td>
+    </tr>
+    
+            <tr>
+        <td colspan="4">
+  <div class="field i">
+    <%= form.label :premiere_part %>
+    <%= form.text_area :premiere_part %>
+  </div></td>
+    </tr>
+           <tr>
+        <td colspan="4"><div class="field ii">
+    <%= form.label :deux_part %>
+    <%= form.text_area :deux_part %>
+  </div></td>
+    </tr>
+           <tr>
+        <td colspan="4"> <div class="field iii">
+    <%= form.label :trois_part %>
+    <%= form.text_area :trois_part %>
+  </div></td>
+    </tr>
+           <tr>
+        <td colspan="4"> <div class="field conclu">
+    <%= form.label :conclusion %>
+    <%= form.text_area :conclusion %>
+  </div></td>
+    </tr>
+    <tr>
+        <td class="myactions"  colspan="4"> <div class="actions">
+    <%= form.submit %>
+  </div></td>
+    </tr>
+         
+</table>
+
+
+<% end %>

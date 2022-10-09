@@ -1,0 +1,172 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Fiche de séance</h1>
+<table>
+    <tr >
+        <td><p>
+  <strong>Date:</strong>
+  <%= @fiche_de_seance.date %>
+</p></td>
+        
+        <td rowspan="3" colspan="3">
+      <p>
+  <strong>Titre:</strong>
+  <%= @fiche_de_seance.titre %>
+</p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+<p>
+  <strong>Cohorte:</strong>
+  <%= @fiche_de_seance.cohorte %>
+</p></td>
+    </tr>
+    
+    <tr>
+        <td><p>
+  <strong>Theme:</strong>
+  <%= @fiche_de_seance.theme %>
+</p></td>
+    </tr>
+    <tr>
+        <td>
+      <p>
+  <strong>Formateur:</strong>
+  <%= @fiche_de_seance.formateur %>
+</p>
+        </td>
+        <td>
+<p>
+  <strong>Effectif:</strong>
+  <%= @fiche_de_seance.effectif %>
+</p>
+        <td>
+<p>
+  <strong>Lieux:</strong>
+  <%= @fiche_de_seance.lieux %>
+</p>
+        </td>
+        <td>
+<p>
+  <strong>Duree:</strong>
+  <%= @fiche_de_seance.duree %>
+</p>
+        </td>
+    </tr>
+    <tr>
+        <td class="precedente" colspan="4"><p>
+  <strong>Seance precedente:</strong>
+  <%= @fiche_de_seance.seance_precedente %>
+</p></td>
+    </tr>
+     <tr >
+        <td class="suivante" colspan="4"><p>
+  <strong>Seance suivante:</strong>
+  <%= @fiche_de_seance.seance_suivante %>
+</p></td>
+     </tr><!-- comment -->
+     
+      <tr>
+        <td colspan="4"><p>
+  <strong>Reference:</strong>
+  <%= @fiche_de_seance.reference %>
+</p></td>
+      </tr><!-- comment -->
+       <tr>
+        <td colspan="4"><p>
+  <strong>Moyen pedagogique:</strong>
+  <%= @fiche_de_seance.moyen_pedagogique %>
+</p></td>
+    </tr>
+    
+        <tr>
+        <td colspan="4"><p>
+  <strong>Objectif:</strong>
+  <%= @fiche_de_seance.objectif %>
+</p></td>
+        </tr><!-- comment -->
+        
+        
+            <tr>
+        <td colspan="4">
+
+<p>
+  <strong>Plan:</strong>
+  <%= @fiche_de_seance.plan %>
+</p></td>
+    </tr>
+    
+    
+            <tr>
+        <td colspan="4"><p>
+  <strong>Points cles:</strong>
+  <%= @fiche_de_seance.points_cles %>
+</p>
+</td>
+    </tr>
+    
+            <tr>
+        <td colspan="4"><p>
+  <strong>Introduction:</strong>
+  <%= @fiche_de_seance.introduction %>
+</p>
+</td>
+    </tr>
+    
+            <tr>
+        <td colspan="4"><p>
+  <strong>I)</strong>
+  <%= @fiche_de_seance.premiere_part %>
+</p></td>
+    </tr>
+           <tr>
+        <td colspan="4"><p>
+  <strong>II)</strong>
+  <%= @fiche_de_seance.deux_part %>
+</p></td>
+    </tr>
+           <tr>
+        <td colspan="4"><p>
+  <strong>III)</strong>
+  <%= @fiche_de_seance.trois_part %>
+</p></td>
+    </tr>
+           <tr>
+        <td colspan="4"><p>
+  <strong>Conclusion:</strong>
+  <%= @fiche_de_seance.conclusion %>
+</p></td>
+    </tr>
+         
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<%= link_to 'Edit', edit_fiche_de_seance_path(@fiche_de_seance) %> |
+<%= link_to 'Back', fiche_de_seances_path %>

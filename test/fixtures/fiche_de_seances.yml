@@ -1,0 +1,45 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: 2022-10-08
+  cohorte: MyString
+  theme: MyString
+  titre: MyString
+  formateur: MyString
+  effectif: MyString
+  lieux: MyString
+  duree: MyString
+  seance_precedente: MyString
+  seance_suivante: MyString
+  reference: MyString
+  moyen_pedagogique: MyString
+  objectif: MyText
+  plan: MyText
+  points_cles: MyText
+  introduction: MyText
+  premiere_part: MyText
+  deux_part: MyText
+  trois_part: MyText
+  conclusion: MyText
+
+two:
+  date: 2022-10-08
+  cohorte: MyString
+  theme: MyString
+  titre: MyString
+  formateur: MyString
+  effectif: MyString
+  lieux: MyString
+  duree: MyString
+  seance_precedente: MyString
+  seance_suivante: MyString
+  reference: MyString
+  moyen_pedagogique: MyString
+  objectif: MyText
+  plan: MyText
+  points_cles: MyText
+  introduction: MyText
+  premiere_part: MyText
+  deux_part: MyText
+  trois_part: MyText
+  conclusion: MyText
